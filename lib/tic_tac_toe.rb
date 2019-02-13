@@ -73,3 +73,11 @@ def turn_count(board)
     space == "X" || space == "O"
   }.length
 end
+
+def current_player(board)
+  if turn_count(board).odd?
+    "O"
+  else
+    "X"
+  end
+end
