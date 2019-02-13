@@ -7,16 +7,4 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 display_board(board)
 
-def play(board)
-  while (!over?(board))
-    turn(board)
-  end
-
-  if won?(board)
-    puts "Congratulations, #{winner(board)}!"
-  elsif draw?(board)
-    puts "Cat's Game!"
-  end
-end
-
 play(board)
