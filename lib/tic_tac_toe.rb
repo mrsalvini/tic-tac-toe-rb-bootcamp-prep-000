@@ -72,12 +72,3 @@ def turn_count(board)
   board.select { |space|
     space == "X" || space == "O"
   }.length
-
-
-
-
-
-
-
-
-
